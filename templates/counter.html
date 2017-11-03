@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Counter</title>
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/counter.css')}}">
+    </head>
+    <body>
+       <div>
+            <h1>Counter</h1>
+            <br>
+            <h3>{{curr_count}}</h3>
+            <br>
+            <form action='/add2' method='post'>
+                <input type='submit' value="Add 2">
+            </form>
+            <form action='/reset' method='post'>
+                <input type='submit' value="Reset">
+            </form>
+        </div> 
+    </body>
+</html>
+
